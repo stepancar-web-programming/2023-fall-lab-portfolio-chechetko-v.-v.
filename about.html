@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <h1>EVelard</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .flex-container {
+            flex: 50%;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="flex">
+                <div class="flex-container order-0">
+                    <div class="carousel section_text-right-space">
+                        <div class="section_portfolio_carousel">
+                            <div class="portfolio_carousel_item">
+                                <img src="image/smb1.jpg" alt="1" />
+                            </div>
+                            <div class="portfolio_carousel_item">
+                                <img src="image/smb2.jpg" alt="2" />
+                            </div>
+                            <div class="portfolio_carousel_item">
+                                <img src="image/smb3.jpg" alt="3" />
+                            </div>
+                        </div>
+                        <div class="slider-buttons">
+                            <button class="slider-prev">Назад</button>
+                            <button class="slider-next">Вперед</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container order-1">
+                    <div class="section_text section_text-right-space">
+                        <h2>Ещё раз привет, я Влад</h2>
+                        <div class="test-text">Мне 21 год. Учусь в унивирситете ИТМО на факультете ПИиКТ на
+                            нейротехнологиях Помимо этого имею дополнительное обучение в Яндексе Планирую идти туда
+                            работать на должность ML engineer Из хобби увлекаюсь ролёвками и настольными играми А также
+                            СМБ- Современный Мечевой Бой. И хотел бы поделиться с вами фотографиями и видео с
+                            тренировки.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-container order-2">
+                    <div class="section_text section_text-right-space section_text-right-align">
+                        <h2>Пример тренировки</h2>
+                        <div class="test-text">Тренировки проходят с использованием мягких мечей - тимбар.
+                            Некоторые, как я, предпочитают упрожняться со стальными тренировычными мечами.
+                            Каждую тренировку проводятся спаринги в защитной экипировки и командные игры
+                            В дальнейшем хочу принять участие в турнире высокого уровня.</div>
+                    </div>
+                </div>
+                <div class="flex-container order-3">
+                    <video class="video-site" controls>
+                        <source src="video/train.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="icons">
+                <li><a class="twitter" href="https://twitter.com/itchief_ru"></a></li>
+                <li><a class="pinterest" href="https://ru.pinterest.com/chechetkovlad/"></a></li>
+                <li><a class="vk" href="https://vk.com/id330427363"></a></li>
+                <li><a class="telegram" href="https://web.telegram.org/a/#-1001322266617"></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/channel/UCMxGpLlwP88BmAdJZzs2kGA"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

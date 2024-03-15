@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стили для body */
+body {
+  position: relative;
+  background-image: linear-gradient(
+    58.2deg,
+    rgba(40, 91, 212, 0.73) -3%,
+    rgba(171, 53, 163, 0.45) 49.3%,
+    rgba(255, 204, 112, 0.37) 97.7%
+  );
+  font-family: "Open Sans", serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили для header */
+.site-header {
+  position: relative;
+  background-color: #000000;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header nav {
+  text-align: right;
+}
+
+.site-header a {
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in;
+}
+
+.site-header a:hover {
+  color: gray;
+}
+
+.site-header h1 {
+  color: white;
+  padding: 20px 30px;
+}
+
+.site-header li {
+  display: inline;
+  margin-right: 10px;
+  padding: 3px;
+}
+
+/* Стили для главной страницы */
+.main {
+  flex: 1;
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text-container {
+  flex: 2;
+  color: #000000;
+  font-size: 24px;
+  transition: all 0.25s ease;
+  text-align: -webkit-center;
+}
+
+.profile-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50px;
+  float: right;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.main-btn {
+  display: inline-block;
+  background-color: #000000;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: all 0.25s ease-in;
+}
+
+.main-btn:hover {
+  background-color: #444444;
+}
+
+/*second-page*/
+.second-page {
+  flex: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column; /* Изменено на вертикальное расположение */
+  align-items: center;
+  width: 50%; /* Занимает 50% ширины экрана */
+  margin: 0 auto; /* Центрируем по горизонтали */
+}
+
+/* Стили для .about-text */
+.about-text {
+  flex: 1; /* Занимает оставшееся пространство справа от слайдера */
+  padding: 0 20px; /* Добавляем отступы для красивого вида */
+}
+
+.portfolio {
+  padding: 25px 0px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.flex-container {
+  margin: 25px 0px;
+}
+
+/* Исправленные стили для .slider-row */
+.section_portfolio_carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.portfolio_carousel_item {
+  flex: 0 0 100%;
+  text-align: right;
+}
+h2 {
+  margin-bottom: 15px;
+}
+.test-text {
+  font-size: 125%;
+}
+
+.section_text-right-space {
+  padding-right: 25px;
+}
+
+.section_text-left-space {
+  padding-left: 25px;
+}
+
+.section_text-right-align {
+  text-align: right;
+}
+
+.portfolio_carousel_item img,
+video {
+  max-width: 85%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.slider-buttons button {
+  background-color: rgba(255, 255, 255, 0.45);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0px 4px;
+  transition: all 0.25s ease-in;
+  opacity: 0.7;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-buttons button:focus {
+  outline: none;
+}
+
+.video {
+  text-align: center;
+}
+
+.video video {
+  width: 100%;
+  max-width: 600px;
+}
+/* Стили для footer */
+footer {
+  margin-top: auto;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.icons > li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.icons a {
+  position: relative;
+  background-color: #000;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  transition: all 0.25s ease-in;
+}
+
+.icons a:hover {
+  background-color: gray;
+}
+
+.icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 0.65rem;
+  top: 0.65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* Добавлены префиксы для адекватной кросс-браузерной поддержки */
+.icons .twitter::before {
+  background-image: url("image/twitter.png");
+}
+
+.icons .pinterest::before {
+  background-image: url("image/pinterest.png");
+}
+
+.icons .vk::before {
+  background-image: url("image/vk.png");
+}
+
+.icons .telegram::before {
+  background-image: url("image/telegram.png");
+}
+
+.icons .youtube::before {
+  background-image: url("image/youtube.png");
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 480px) {
+  .site-header a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+  .site-header li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .site-header h1 {
+    padding: 10px 15px;
+    font-size: 24px;
+  }
+  main {
+    padding: 0 20px;
+  }
+
+  .profile-image {
+    max-width: 55%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .image-container {
+    padding-top: 80px;
+    margin-right: 0;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .text-container {
+    padding: 0px 25px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  .order-0 {
+    order: 1;
+  }
+
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 4;
+  }
+
+  .order-3 {
+    order: 3;
+  }
+
+  .section_text-right-space {
+    padding-right: 0px;
+  }
+
+  .portfolio_carousel_item img,
+  video {
+    max-width: 100%;
+    margin: 0px;
+  }
+}
