@@ -1,13 +1,14 @@
+// eslint-disable-next-line func-names
 (function () {
-  const carouselItems = document.querySelectorAll(".portfolio_carousel_item");
-  const prevButton = document.querySelector(".slider-prev");
-  const nextButton = document.querySelector(".slider-next");
+  const carouselItems = document.querySelectorAll('.slide');
+  const prevButton = document.querySelector('.slider-prev');
+  const nextButton = document.querySelector('.slider-next');
   let currentSlide = 0;
 
   function showSlide(n) {
-    carouselItems[currentSlide].style.display = "none";
+    carouselItems[currentSlide].style.display = 'none';
     currentSlide = (n + carouselItems.length) % carouselItems.length;
-    carouselItems[currentSlide].style.display = "block";
+    carouselItems[currentSlide].style.display = 'block';
   }
 
   function nextSlide() {
@@ -21,12 +22,10 @@
   function updateSlide() {
     showSlide(currentSlide);
   }
-
-  nextButton.addEventListener("click", nextSlide);
-  prevButton.addEventListener("click", prevSlide);
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
 
   window.updateSlide = updateSlide;
 
   showSlide(currentSlide);
-})();
-
+}());
