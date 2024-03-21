@@ -1,0 +1,27 @@
+{
+  "name": "vlad_p",
+  "version": "1.0.0",
+  "description": "Лабораторная работа",
+  "main": "external-script.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "stylelint": "stylelint '**/*.{css,js}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepancar-web-programming/2023-fall-lab-portfolio-chechetko-v.-v..git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stepancar-web-programming/2023-fall-lab-portfolio-chechetko-v.-v./issues"
+  },
+  "homepage": "https://github.com/stepancar-web-programming/2023-fall-lab-portfolio-chechetko-v.-v.#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "postcss-lit": "^1.1.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

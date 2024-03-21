@@ -68,25 +68,7 @@ body {
   background-color: #444;
 }
 
-/* second-page */
-.second-page {
-  flex: 1;
-}
-
-.about {
-  display: flex;
-  flex-direction: column; /* Изменено на вертикальное расположение */
-  align-items: center;
-  width: 50%; /* Занимает 50% ширины экрана */
-  margin: 0 auto; /* Центрируем по горизонтали */
-}
-
-/* Стили для .about-text */
-.about-text {
-  flex: 1; /* Занимает оставшееся пространство справа от слайдера */
-  padding: 0 20px; /* Добавляем отступы для красивого вида */
-}
-
+/* Вторая страница */
 .portfolio {
   padding: 25px 0;
 }

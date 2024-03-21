@@ -11,7 +11,7 @@ function includeCommonElements() {
     });
 }
 
-// eslint-disable-next-line func-names
+
 window.onload = function () {
   includeCommonElements();
 };
