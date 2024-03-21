@@ -5,23 +5,23 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-  }
-  
-  .icons {
+}
+
+.icons {
     display: flex;
     justify-content: center;
     list-style: none;
     margin-top: 0.25rem;
     margin-bottom: 1rem;
     padding-left: 0;
-  }
-  
-  .icons > li {
+}
+
+.icons > li {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-  }
-  
-  .icons a{
+}
+
+.icons a {
     position: relative;
     background-color: #000;
     display: block;
@@ -30,14 +30,13 @@ footer {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 2.5rem;
-   
-  }
-  
-  .icons a:hover {
+}
+
+.icons a:hover {
     background-color: gray;
-  }
-  
-  .icons a::before {
+}
+
+.icons a::before {
     content: "";
     position: absolute;
     width: 1.2rem;
@@ -46,6 +45,4 @@ footer {
     top: 0.65rem;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-  }
-  
-  
+}

@@ -1,55 +1,55 @@
 /* Стили для header */
 .site-header {
-  position: relative;
-  background-color: #000;
+    position: relative;
+    background-color: #000;
 }
 
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-header nav {
-  text-align: right;
+    text-align: right;
 }
 
 .site-header a {
-  color: white;
-  padding: 20px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.25s ease-in;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in;
 }
 
 .site-header a:hover {
-  color: gray;
+    color: gray;
 }
 
 .site-header h1 {
-  color: white;
-  padding: 20px 30px;
+    color: white;
+    padding: 20px 30px;
 }
 
 .site-header li {
-  display: inline;
-  margin-right: 10px;
-  padding: 3px;
+    display: inline;
+    margin-right: 10px;
+    padding: 3px;
 }
 
 @media screen and (width <= 480px) {
-  .site-header a {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
+    .site-header a {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
 
-  .site-header li {
-    display: block;
-    margin-right: 0;
-  }
+    .site-header li {
+        display: block;
+        margin-right: 0;
+    }
 
-  .site-header h1 {
-    padding: 10px 15px;
-    font-size: 24px;
-  }
+    .site-header h1 {
+        padding: 10px 15px;
+        font-size: 24px;
+    }
 }

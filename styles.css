@@ -1,243 +1,249 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Стили для body */
 body {
-  position: relative;
-  background-image: linear-gradient(
-    58.2deg,
-    #285bd4ba -3%,
-    #ab35a373 49.3%,
-    #ffcc705e 97.7%
-  );
-  font-family: "Open Sans", serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(
+        58.2deg,
+        #285bd4ba -3%,
+        #ab35a373 49.3%,
+        #ffcc705e 97.7%
+    );
+    font-family: "Open Sans", serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Стили для главной страницы */
 .main {
-  flex: 1;
-  display: flex;
+    flex: 1;
+    display: flex;
 }
 
 .content-wrapper {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .image-container {
-  flex: 1;
-  margin-right: 20px;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .text-container {
-  flex: 2;
-  color: #000;
-  font-size: 24px;
-  transition: all 0.25s ease;
-  text-align: -webkit-center;
+    flex: 2;
+    color: #000;
+    font-size: 24px;
+    transition: all 0.25s ease;
+    text-align: -webkit-center;
 }
 
 .profile-image {
-  max-width: 80%;
-  height: auto;
-  border-radius: 50px;
-  float: right;
-  box-shadow: 0 0 15px -3px #0000001a;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50px;
+    float: right;
+    box-shadow: 0 0 15px -3px #0000001a;
 }
 
 .main-btn {
-  display: inline-block;
-  background-color: #000;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  margin-top: 20px;
-  border-radius: 8px;
-  transition: all 0.25s ease-in;
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: all 0.25s ease-in;
 }
 
 .main-btn:hover {
-  background-color: #444;
+    background-color: #444;
 }
 
 /* Вторая страница */
 .portfolio {
-  padding: 25px 0;
+    padding: 25px 0;
+}
+
+.flex {
+    display: flex;
 }
 
 .flex-container {
-  margin: 25px 0;
+    flex: 50%;
+    display: flex;
+    align-items: center;
 }
 
 /* Исправленные стили для .slider-row */
 .slider {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .slide {
-  flex: 0 0 100%;
-  text-align: right;
+    flex: 0 0 100%;
+    text-align: right;
 }
 
 h2 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .test-text {
-  font-size: 125%;
+    font-size: 125%;
 }
 
 .right-space {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .right-align {
-  text-align: right;
+    text-align: right;
 }
 
 .slide img,
 video {
-  max-width: 85%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 15px -3px #0000001a;
-  margin: 10px;
+    max-width: 85%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px -3px #0000001a;
+    margin: 10px;
 }
 
 .slider-buttons {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 .slider-buttons button {
-  background-color: #ffffff73;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  margin: 0 4px;
-  transition: all 0.25s ease-in;
-  opacity: 0.7;
+    background-color: #ffffff73;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 4px;
+    transition: all 0.25s ease-in;
+    opacity: 0.7;
 }
 
 .slider-buttons button:hover {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .slider-buttons button:focus {
-  outline: none;
+    outline: none;
 }
 
 .video {
-  text-align: center;
+    text-align: center;
 }
 
 .video video {
-  width: 100%;
-  max-width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 /* Добавлены префиксы для адекватной кросс-браузерной поддержки */
 .icons .twitter::before {
-  background-image: url("image/twitter.png");
+    background-image: url("image/twitter.png");
 }
 
 .icons .pinterest::before {
-  background-image: url("image/pinterest.png");
+    background-image: url("image/pinterest.png");
 }
 
 .icons .vk::before {
-  background-image: url("image/vk.png");
+    background-image: url("image/vk.png");
 }
 
 .icons .telegram::before {
-  background-image: url("image/telegram.png");
+    background-image: url("image/telegram.png");
 }
 
 .icons .youtube::before {
-  background-image: url("image/youtube.png");
+    background-image: url("image/youtube.png");
 }
 
 /* Медиа-запрос для мобильных устройств */
 @media screen and (width <= 480px) {
-  .site-header a {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
+    .site-header a {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
 
-  .site-header li {
-    display: block;
-    margin-right: 0;
-  }
+    .site-header li {
+        display: block;
+        margin-right: 0;
+    }
 
-  .site-header h1 {
-    padding: 10px 15px;
-    font-size: 24px;
-  }
+    .site-header h1 {
+        padding: 10px 15px;
+        font-size: 24px;
+    }
 
-  main {
-    padding: 0 20px;
-  }
+    main {
+        padding: 0 20px;
+    }
 
-  .profile-image {
-    max-width: 55%;
-  }
+    .profile-image {
+        max-width: 55%;
+    }
 
-  .content-wrapper {
-    flex-direction: column;
-  }
+    .content-wrapper {
+        flex-direction: column;
+    }
 
-  .image-container {
-    padding-top: 80px;
-    margin-right: 0;
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
+    .image-container {
+        padding-top: 80px;
+        margin-right: 0;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
 
-  .text-container {
-    padding: 0 25px;
-  }
+    .text-container {
+        padding: 0 25px;
+    }
 
-  .flex {
-    flex-direction: column;
-  }
+    .flex {
+        flex-direction: column;
+    }
 
-  .order-0 {
-    order: 1;
-  }
+    .order-0 {
+        order: 1;
+    }
 
-  .order-1 {
-    order: 2;
-  }
+    .order-1 {
+        order: 2;
+    }
 
-  .order-2 {
-    order: 4;
-  }
+    .order-2 {
+        order: 4;
+    }
 
-  .order-3 {
-    order: 3;
-  }
+    .order-3 {
+        order: 3;
+    }
 
-  .right-space {
-    padding-right: 0;
-  }
+    .right-space {
+        padding-right: 0;
+    }
 
-  .slide img,
-  video {
-    max-width: 100%;
-    margin: 0;
-  }
+    .slide img,
+    video {
+        max-width: 100%;
+        margin: 0;
+    }
 }
